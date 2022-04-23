@@ -1,0 +1,61 @@
+.footer-form {
+    margin-left: 93px;
+}
+
+.form-list {
+    display: flex;
+    width: 570px;
+}
+
+.fotter-form-field {
+    width: 358px;
+}
+
+.form-list input {
+    display: block;
+    box-sizing: border-box;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    margin: 0;
+    background: #2f303a;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.form-list input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-btn {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    margin-left: 12px;
+    padding: 0;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+
+}
+
+.footer-btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 28px 10px 26px;
+}
+
+.footer-form-icone {
+    margin-left: 10px;
+    fill: rgba(255, 255, 255, 1);
+}

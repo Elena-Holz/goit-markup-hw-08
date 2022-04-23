@@ -1,0 +1,59 @@
+.features {
+    padding: 94px 0;
+}
+
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-list__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.features-list__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    text-align: justify;
+}
+
+.features-list__item {
+    width: 270px;
+
+    &::before {
+        display: block;
+        content: "";
+        height: 120px;
+        margin-bottom: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #f5f4fa;
+    }
+
+    &:nth-child(1)::before {
+        background-image: url("../images/antenna.svg");
+    }
+
+    &:nth-child(2)::before {
+        background-image: url("../images/clock.svg");
+    }
+
+    &:nth-child(3)::before {
+        background-image: url("../images/leptop.svg");
+    }
+
+    &:nth-child(4)::before {
+        background-image: url("../images/space.svg");
+    }
+
+
+}
