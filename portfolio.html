@@ -4,59 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Document</title>
 </head>
 <body>
 
     <!--Header-->
 
 <header class="header">
-    <div class="header-main container">
-        <a class="logo logo-header link" lang="en" href="">Web<span class="logo header-logo">Studio</span></a>
+    <div class="header__container container">
+        <a class="logo logo-header link" lang="en" href="">Web<span class="header__logo">Studio</span></a>
         <nav class="navigation">
             <ul class="nav-list list">
                 <li class="nav-list__site">
-                    <a class="nav-lis__link link" href="./index.html">Студия</a>
+                    <a class="nav-list__link link" href="./index.html">Студия</a>
                 </li>
                 <li class="nav-list__site">
-                    <a class="nav-lis__link link nav-list__link--page" href="">Портфолио</a>
+                    <a class="nav-list__link link nav-list__link--page" href="">Портфолио</a>
                 </li>
                 <li class="nav-list__site">
-                    <a class="nav-lis__link link" href="">Контакты</a>
+                    <a class="nav-list__link link" href="">Контакты</a>
                 </li>
             </ul>
         </nav>
+        <button type="button" class="mobile-menu-btn" data-menu-open>
+            <svg class="mobile-menu-btn__icon" width="40" height="40">
+                <use href="./images/symbol-defs.svg#burger-menu"></use>
+            </svg>
+        </button>
         <ul class="list-conect list">
             <li class="list-contact">
                 <a class="list-contact__mail link" href="mailto:info@devstudio.com">
-                    <svg class="list-contact__icone" width="16" height="12">
+                    <svg class="list-contact__icon" width="16" height="12">
                         <use href="./images/symbol-defs.svg#icon-envelope"></use>
                     </svg>info@devstudio.com</a>
             </li>
             <li class="list-contact">
                 <a class="list-contact__phone link" href="tel:+380961111111">
-                    <svg class="list-contact__icone" width="10" height="16">
+                    <svg class="list-contact__icon" width="10" height="16">
                         <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11</a>
             </li>
         </ul>
     </div>
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+            <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#close-icon"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu-list list">
+                <li class="mobile-menu-list__site">
+                    <a class="mobile-menu-list__link link" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-menu-list__site">
+                    <a class="mobile-menu-list__link link mobile-menu-list__link--color" href="">Портфолио</a>
+                </li>
+                <li class="mobile-menu-list__site">
+                    <a class="mobile-menu-list__link link" href="">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu-conect list">
+                <li class="mobile-menu-conect__contact">
+                    <a class="mobile-menu-conect__phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu-conect__contact">
+                    <a class="mobile-menu-conect__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu-iteams list">
+                <li class="mobile-menu__iteam">
+                    <a class="link mobile-menu__social" href="">Instagram</a>
+                </li>
+                <li class="mobile-menu__iteam">
+                    <a class="link mobile-menu__social" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu__iteam">
+                    <a class="link mobile-menu__social" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu__iteam">
+                    <a class="link mobile-menu__social" href="">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 </header>
 
     <!--Portfolio-->
 
-    <!-- <main>
+    <main>
     <section class="portfolio">
-        <div class="container">
-            <h1 class="portfolio-title">Наши работы</h1>
+        <div class="container portfolio__container">
+            <h1 class="portfolio-title viually-hidden">Наши работы</h1>
             <ul class="portfolio-list list">
                 <li class="portfolio-list-btn">
                 <button class="portfolio-btn" type="button">Все</button>
@@ -78,13 +127,27 @@
                 <li class="portfolio-list-iteam">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-overlay">
-                        <img class="portfolio-list-img" src="./images/tehnokryak.jpg" alt="tehnokryak" width="370" height="294" />
+                            <picture>
+                                <source srcset="./images/decktop-tehnokryak.webp 1x, ./images/decktop-tehnokryak@2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./images/decktop-tehnokryak.jpg 1x, ./images/decktop-tehnokryak@2.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source srcset="./images/tablet-tehnokryak.webp 1x, ./images/tablet-tehnokryak@2.webp 2x" media="(min-width: 768px)"
+                                    type="image/webp" />
+                                <source srcset="./images/tablet-tehnokryak.jpg 1x, ./images/tablet-tehnokryak@2.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/mobile-tehnokryak.webp 1x, ./images/mobile-tehnokryak@2.webp 2x" media="(max-width: 767px)"
+                                    type="image/webp" />
+                                <source srcset="./images/mobile-tehnokryak.jpg 1x, ./images/mobile-tehnokryak@2.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-list-img" src="" alt="tehnokryak" />
+                            </picture>
                             <div class="overlay-text">
-                            <p class="overlay-content">
-                                Ресурс предлагает комплексные <br> предложения с разным уровнем <br> функционала и сервисов. Все это <br> позволит посетителю получить <br> исчерпывающие сведения <br> о компании или частном лице. 
-                            </p>    
+                                <p class="overlay-content">
+                                    Ресурс предлагает комплексные <br> предложения с разным уровнем <br> функционала и сервисов. Все это <br> позволит посетителю получить <br> исчерпывающие сведения <br> о компании или частном лице. 
+                                </p>    
                             </div>
-                            </div>
+                        </div>
                         <div class="portfolio-sing">
                             <h3 class="portfolio-title3">Технокряк</h3>
                             <p class="portfolio-list-text">Веб-сайт</p>
@@ -94,7 +157,21 @@
                 <li class="portfolio-list-iteam">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-overlay">
-                            <img class="portfolio-list-img" src="./images/poster.jpg" alt="poster" width="370" height="294" />
+                            <picture>
+                                <source srcset="./images/decktop-poster.webp 1x, ./images/decktop-poster@2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./images/decktop-poster.jpg 1x, ./images/decktop-poster@2.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source srcset="./images/tablet-poster.webp 1x, ./images/tablet-poster@2.webp 2x" media="(min-width: 768px)"
+                                    type="image/webp" />
+                                <source srcset="./images/tablet-poster.jpg 1x, ./images/tablet-poster@2.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/mobile-poster.webp 1x, ./images/mobile-poster@2.webp 2x" media="(max-width: 767px)"
+                                    type="image/webp" />
+                                <source srcset="./images/mobile-poster.jpg 1x, ./images/mobile-poster@2.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-list-img" src="" alt="poster"/>
+                            </picture>
                             <div class="overlay-text">
                                 <p class="overlay-content">
                                     Ресурс предлагает комплексные <br> предложения с разным уровнем <br> функционала и сервисов. Все это <br>
@@ -111,7 +188,18 @@
                 <li class="portfolio-list-iteam">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-overlay">
-                            <img class="portfolio-list-img" src="./images/restoransea.jpg" alt="restoransea" width="370" height="294" />
+                            <picture>
+                                <source srcset="./images/decktop-restoransea.webp 1x, ./images/decktop-restoransea@2.webp 2x" media="(min-width: 1200px)"
+                                    type="image/webp" />
+                                <source srcset="./images/decktop-restoransea.jpg 1x, ./images/decktop-restoransea@2.jpg 2x" media="(min-width: 1200px)" />
+                                <source srcset="./images/tablet-restoransea.webp 1x, ./images/tablet-restoransea@2.webp 2x" media="(min-width: 768px)"
+                                    type="image/webp" />
+                                <source srcset="./images/tablet-restoransea.jpg 1x, ./images/tablet-restoransea@2.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="./images/mobile-restoransea.webp 1x, ./images/mobile-restoransea@2.webp 2x" media="(max-width: 767px)"
+                                    type="image/webp" />
+                                <source srcset="./images/mobile-restoransea.jpg 1x, ./images/mobile-restoransea@2.jpg 2x" media="(max-width: 767px)" />
+                                <img class="portfolio-list-img" src="" alt="restoransea" />
+                            </picture>
                             <div class="overlay-text">
                                 <p class="overlay-content">
                                     Ресурс предлагает комплексные <br> предложения с разным уровнем <br> функционала и сервисов. Все это <br>
@@ -128,7 +216,21 @@
                 <li class="portfolio-list-iteam">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-overlay">
-                            <img class="portfolio-list-img" src="./images/proektprime.jpg" alt="proektprime" width="370" height="294" />
+                            <picture>
+                                <source srcset="./images/decktop-proektprime.webp 1x, ./images/decktop-proektprime@2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./images/decktop-proektprime.jpg 1x, ./images/decktop-proektprime@2.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source srcset="./images/tablet-proektprime.webp 1x, ./images/tablet-proektprime@2.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source srcset="./images/tablet-proektprime.jpg 1x, ./images/tablet-proektprime@2.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/mobile-proektprime.webp 1x, ./images/mobile-proektprime@2.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./images/mobile-proektprime.jpg 1x, ./images/mobile-proektprime@2.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-list-img" src="" alt="proektprime" />
+                            </picture>
                                 <div class="overlay-text">
                                     <p class="overlay-content">
                                         Ресурс предлагает комплексные <br> предложения с разным уровнем <br> функционала и сервисов. Все это <br>
@@ -145,7 +247,21 @@
                 <li class="portfolio-list-iteam">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-overlay">
-                            <img class="portfolio-list-img" src="./images/proektboxes.jpg" alt="proektboxes" width="370" height="294" />
+                            <picture>
+                                <source srcset="./images/decktop-proektboxes.webp 1x, ./images/decktop-proektboxes@2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./images/decktop-proektboxes.jpg 1x, ./images/decktop-proektboxes@2.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source srcset="./images/tablet-proektboxes.webp 1x, ./images/tablet-proektboxes@2.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source srcset="./images/tablet-proektboxes.jpg 1x, ./images/tablet-proektboxes@2.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/mobile-proektboxes.webp 1x, ./images/mobile-proektboxes@2.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./images/mobile-proektboxes.jpg 1x, ./images/mobile-proektboxes@2.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-list-img" src="" alt="proektboxes" />
+                            </picture>
                             <div class="overlay-text">
                                 <p class="overlay-content">
                                     Ресурс предлагает комплексные <br> предложения с разным уровнем <br> функционала и сервисов. Все это <br>
@@ -162,7 +278,21 @@
                 <li class="portfolio-list-iteam">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-overlay">
-                            <img class="portfolio-list-img" src="./images/inspiration.jpg" alt="inspiration" width="370" height="294" />
+                            <picture>
+                                <source srcset="./images/decktop-inspiration.webp 1x, ./images/decktop-inspiration@2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./images/decktop-inspiration.jpg 1x, ./images/decktop-inspiration@2.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source srcset="./images/tablet-inspiration.webp 1x, ./images/tablet-inspiration@2.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source srcset="./images/tablet-inspiration.jpg 1x, ./images/tablet-inspiration@2.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/mobile-inspiration.webp 1x, ./images/mobile-inspiration@2.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./images/mobile-inspiration.jpg 1x, ./images/mobile-inspiration@2.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-list-img" src="" alt="inspiration" />
+                            </picture>
                             <div class="overlay-text">
                                 <p class="overlay-content">
                                     Ресурс предлагает комплексные <br> предложения с разным уровнем <br> функционала и сервисов. Все это <br>
@@ -179,7 +309,21 @@
                 <li class="portfolio-list-iteam">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-overlay">
-                            <img class="portfolio-list-img" src="./images/ltdeditionjpg.jpg" alt="ltdeditionjpg" width="370" height="294" />
+                            <picture>
+                                <source srcset="./images/decktop-ltdeditionjpg.webp 1x, ./images/decktop-ltdeditionjpg@2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./images/decktop-ltdeditionjpg.jpg 1x, ./images/decktop-ltdeditionjpg@2.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source srcset="./images/tablet-ltdeditionjpg.webp 1x, ./images/tablet-ltdeditionjpg@2.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source srcset="./images/tablet-ltdeditionjpg.jpg 1x, ./images/tablet-ltdeditionjpg@2.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/mobile-ltdeditionjpg.webp 1x, ./images/mobile-ltdeditionjpg@2.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./images/mobile-ltdeditionjpg.jpg 1x, ./images/mobile-ltdeditionjpg@2.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-list-img" src="" alt="ltdeditionjpg" />
+                            </picture>
                                 <div class="overlay-text">
                                     <p class="overlay-content">
                                         Ресурс предлагает комплексные <br> предложения с разным уровнем <br> функционала и сервисов. Все это <br>
@@ -196,7 +340,21 @@
                 <li class="portfolio-list-iteam">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-overlay">
-                            <img class="portfolio-list-img" src="./images/proektlab.jpg" alt="proektlab" width="370" height="294" />
+                            <picture>
+                                <source srcset="./images/decktop-proektlab.webp 1x, ./images/decktop-proektlab@2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./images/decktop-proektlab.jpg 1x, ./images/decktop-proektlab@2.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source srcset="./images/tablet-proektlab.webp 1x, ./images/tablet-proektlab@2.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source srcset="./images/tablet-proektlab.jpg 1x, ./images/tablet-proektlab@2.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/mobile-proektlab.webp 1x, ./images/mobile-proektlab@2.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./images/mobile-proektlab.jpg 1x, ./images/mobile-proektlab@2.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-list-img" src="" alt="proektlab" />
+                            </picture>
                                 <div class="overlay-text">
                                     <p class="overlay-content">
                                         Ресурс предлагает комплексные <br> предложения с разным уровнем <br> функционала и сервисов. Все это <br>
@@ -213,7 +371,21 @@
                 <li class="portfolio-list-iteam">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-overlay">
-                            <img class="portfolio-list-img"  src="./images/growing.png" alt="growing" width="370" height="294" />
+                            <picture>
+                                <source srcset="./images/decktop-growing.webp 1x, ./images/decktop-growing@2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./images/decktop-growing.jpg 1x, ./images/decktop-growing@2.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source srcset="./images/tablet-growing.webp 1x, ./images/tablet-growing@2.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source srcset="./images/tablet-growing.jpg 1x, ./images/tablet-growing@2.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/mobile-growing.webp 1x, ./images/mobile-growing@2.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./images/mobile-growing.jpg 1x, ./images/mobile-growing@2.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-list-img" src="" alt="growing" />
+                            </picture>
                                 <div class="overlay-text">
                                     <p class="overlay-content">
                                         Ресурс предлагает комплексные <br> предложения с разным уровнем <br> функционала и сервисов. Все это <br>
@@ -230,65 +402,68 @@
             </ul>
         </div>
     </section>
-</main> -->
+</main>
 
     <!--Footer-->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer-container">
-            <div class="nav">
-                <a class="logo logo-footer link" lang="en" href="">Web<span class="footer-logo logo">Studio</span></a>
-                <address class="address">
-                    <ul class="address-list list">
-                        <li class="address-list-iteam">
-                            <a class="address-list-map link" href="https://goo.gl/maps/vSLd71putyEXjQZGA" target="_blank" rel="noopener noreferrer nofollow">г.Киев, пр-т Леси Украинки, 26</a>
+            <div class="footer-container-nav">
+                <div class="footer-container-nav__box">
+                    <a class="logo logo-footer link" lang="en" href="">Web<span class="footer-logo logo">Studio</span></a>
+                    <address class="address">
+                        <ul class="address-list list">
+                            <li class="address-list-iteam">
+                                <a class="address-list-map link" href="https://goo.gl/maps/vSLd71putyEXjQZGA"
+                                    target="_blank" rel="noopener noreferrer nofollow">г.Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="address-list-iteam">
+                                <a class="address-list-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="address-list-iteam">
+                                <a class="address-list-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-social">
+                    <h3 class="footer-social-title">Присоединяйтесь</h3>
+                    <ul class="footer-social-list list">
+                        <li class="footer-iteams">
+                            <a class="footer-social-icone" href="">
+                                <svg class="footer-icone" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address-list-iteam">
-                            <a class="address-list-mail link"  href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <li class="footer-iteams">
+                            <a class="footer-social-icone" href="">
+                                <svg class="footer-icone" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-twitter1"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address-list-iteam">
-                            <a class="address-list-phone link"  href="tel:+380961111111">+38 096 111 11 11</a>
+                        <li class="footer-iteams">
+                            <a class="footer-social-icone" href="">
+                                <svg class="footer-icone" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-iteams">
+                            <a class="footer-social-icone" href="">
+                                <svg class="footer-icone" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="footer-social nav">
-                <h3 class="footer-social-title">Присоединяйтесь</h3>
-                <ul class="footer-social-list list">
-                    <li class="footer-iteams">
-                        <a class="footer-social-icone" href="">
-                            <svg class="footer-icone" width="20" height="20"> 
-                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-iteams">
-                        <a class="footer-social-icone" href="">
-                            <svg class="footer-icone" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-twitter1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-iteams">
-                        <a class="footer-social-icone" href="">
-                            <svg class="footer-icone" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-iteams">
-                        <a class="footer-social-icone" href="">
-                            <svg class="footer-icone" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="footer-form">
                 <h3 class="footer-social-title">Подпишитесь на рассылку</h3>
                 <form class="form-list">
-                    <input type="email" name="email" placeholder="E-mail" />
+                    <input class="form-list__imput" type="email" name="email" placeholder="E-mail" />
                     <button class="footer-form-btn" type="submit">
                         <span class="footer-btn-icon">
                             <span> Подписаться</span>
@@ -300,6 +475,7 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
