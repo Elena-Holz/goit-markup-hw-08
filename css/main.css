@@ -195,7 +195,7 @@ img {
 
 .mobile-menu__close-btn:hover .mobile-menu-list__link--color,
 .mobile-menu__close-btn:focus .mobile-menu-list__link--color {
-  color: #212121;
+  color: #983737;
 }
 
 .mobile-menu-list {
@@ -372,7 +372,7 @@ img {
   .list-contact__phone:focus {
     color: #2196f3;
   }
-  .list-contact__icone {
+  .list-contact__icon {
     fill: currentColor;
     margin-right: 10px;
   }
@@ -527,8 +527,8 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover .modal-btn__icone,
-.modal-btn:focus .modal-btn__icone {
+.modal-btn:hover .modal-btn__icon,
+.modal-btn:focus .modal-btn__icon {
   fill: #2196f3;
 }
 
