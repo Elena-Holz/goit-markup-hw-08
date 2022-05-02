@@ -111,7 +111,39 @@ border-radius: 0px 0px 4px 4px;
         }
     }
 } 
+.team-box__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    margin: 0 auto;
+    color: #afb1b8;
+    background-color: #ffffff;
+    border-radius: 50%;
 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: #2196f3;
+
+    }
+}
+
+.team-box__icon {
+    fill: #afb1b8;
+
+    .team-box__link:hover &,
+    .team-box__link:focus & {
+        fill: #ffffff;
+    }
+}
 }
 
 
@@ -141,38 +173,6 @@ border-radius: 0px 0px 4px 4px;
     width: 100%;
     height: auto;
 }
-    .team-box__link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 44px;
-            width: 44px;
-            margin: 0 auto;
-            color: #afb1b8;
-            background-color: #ffffff;
-            border-radius: 50%;
-            
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                    
-        &:not(:last-child) {
-            margin-right: 10px;
-        }
-           
-        &:hover,
-        &:focus {
-            background-color: #2196f3;
-    
-        }
-    }
-    
-        .team-box__icon {
-        fill: #afb1b8;
-    
-        .team-box__link:hover &,
-        .team-box__link:focus & {
-            fill: #ffffff;
-        }
-    }
+   
 }
 
